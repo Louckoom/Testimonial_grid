@@ -1,0 +1,119 @@
+$purple : hsl(263, 55%, 52%);
+$dark_grayish_blue : hsl(217, 19%, 35%);
+$blackish_blue : hsl(219, 29%, 14%);
+$white : hsl(0, 0%, 100%);
+$lightgray : hsl(0, 0%, 81%);
+$grayish_blue : hsl(210, 46%, 95%);
+
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+@media (min-width:375px){
+    body {
+        background-color: $grayish_blue;
+        padding: 1.25rem 1.875rem;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+        .all_cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+            .card_one_purple {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: $purple;
+                padding: 2.5rem 1.875rem;
+                border-radius: 10px;
+                color: $white;
+                .testimonial_text {
+                    opacity: 70%;
+                }
+            }
+            .card_two_gray {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: $dark_grayish_blue;
+                padding: 2.5rem 1.875rem;
+                border-radius: 10px;
+                color: $white;
+                .testimonial_text {
+                    opacity: 70%;
+                }
+            }
+            .card_three_white01 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: $white;
+                padding: 2.5rem 1.875rem;
+                border-radius: 10px;
+                color: $blackish_blue;
+                .identity_text {
+                    p {
+                        color: $blackish_blue;
+                    }
+                }
+                .testimonial_text {
+                    opacity: 70%;
+                }
+            }
+            .card_four_darkblue {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: $blackish_blue;
+                padding: 2.5rem 1.875rem;
+                border-radius: 10px;
+                color: $white;
+                .testimonial_text {
+                    opacity: 70%;
+                }
+            }
+            .card_five_white02 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: $white;
+                padding: 2.5rem 1.875rem;
+                border-radius: 10px;
+                color: $blackish_blue;
+                .identity_text {
+                    p {
+                        color: $blackish_blue;
+                    }
+                }
+                .testimonial_text {
+                    opacity: 70%;
+                }
+            }
+            .identity {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $white;
+                gap: 1.875rem;
+                img {
+                    border-radius: 360%;
+                }
+                .status{
+                    opacity: 50%;
+                }
+            }
+            svg {
+                position: absolute;
+                left: 52%;
+                opacity: 60%;
+              }
+        }
+        
+    }
+}
